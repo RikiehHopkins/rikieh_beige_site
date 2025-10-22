@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Rikieh Hopkins</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Rikieh Hopkins</a>
+    <nav class="nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="organizations.html">Organizations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="mobile-toggle" aria-label="Toggle navigation">☰</button>
+  </div>
+</header>
+
+<main class="container">
+  <article class="about-article card">
+    <h1>About Me</h1>
+    <p>I’m a Computer Science student at Virginia State University with interests in game development, systems programming, and algorithms. I enjoy building projects to learn deeper technical concepts.</p>
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>C++ · Python · Java · C#</li>
+      <li>Git · Unity · VS Code</li>
+      <li>Data Structures · Algorithms · OOP</li>
+    </ul>
+    <h2>Goals</h2>
+    <ul>
+      <li>Land an internship in games or systems</li>
+      <li>Ship a small commercial title</li>
+      <li>Learn graphics & engine fundamentals</li>
+    </ul>
+  </article>
+</main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Rikieh Hopkins</small>
+      <div class="socials">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="chatToggle" class="chat-toggle" aria-label="Open chat">💬</button>
+  <div id="chatPanel" class="chat-panel" hidden>
+    <div class="chat-header">
+      <div>Assistant</div>
+      <button id="chatClose" aria-label="Close chat">✕</button>
+    </div>
+    <div id="chatMessages" class="chat-messages" role="log" aria-live="polite"></div>
+    <form id="chatForm" class="chat-form">
+      <input id="chatInput" placeholder="Ask me about my projects, skills, or CS topics..." autocomplete="off">
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/chat.js"></script>
+</body>
+</html>
+

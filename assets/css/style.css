@@ -1,0 +1,74 @@
+
+:root{
+  --bg: #f6f1ea;
+  --paper: #fffdfa;
+  --beige: #e9dfd0;
+  --brown: #6b4f3b;
+  --muted: #5a4a42;
+  --accent: #b08b5b;
+  --card-radius: 12px;
+  --max-width: 1000px;
+}
+
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; margin:0; background:var(--bg); color:var(--muted); line-height:1.5}
+.container{max-width:var(--max-width);margin:0 auto;padding:2rem}
+.site-header{background:linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.6));border-bottom:1px solid rgba(107,79,59,0.08);position:sticky;top:0;z-index:20}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+.logo{font-weight:700;color:var(--brown);text-decoration:none;font-size:1.1rem}
+.nav{display:flex;gap:1rem;align-items:center}
+.nav a{color:var(--muted);text-decoration:none;padding:0.5rem;border-radius:8px;transition:background .18s, color .18s}
+.nav a:hover{background:var(--beige);color:var(--brown)}
+.nav a.active{background:var(--accent);color:white}
+.mobile-toggle{display:none;background:transparent;border:none;font-size:1.2rem;color:var(--muted)}
+
+/* hero */
+.hero{display:flex;gap:2rem;align-items:stretch;padding:3rem 0}
+.hero-left{flex:1}
+.hero-right{width:320px}
+.accent{color:var(--accent)}
+.lead{color:var(--muted);opacity:0.9}
+.btn{display:inline-block;padding:0.6rem 1rem;border-radius:10px;background:var(--brown);color:var(--paper);text-decoration:none;border:none;cursor:pointer;transition:transform .12s}
+.btn:active{transform:translateY(1px)}
+.btn.ghost{background:transparent;color:var(--brown);border:1px solid rgba(107,79,59,0.08)}
+
+/* cards and layout */
+.card{background:var(--paper);padding:1rem;border-radius:var(--card-radius);box-shadow:0 8px 18px rgba(107,79,59,0.06);}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+
+/* projects, organizations */
+.project-card, .project{transition:transform .18s, box-shadow .18s}
+.project-card:hover, .project:hover{transform:translateY(-6px);box-shadow:0 18px 36px rgba(107,79,59,0.06)}
+
+/* contact form */
+.contact-form label{display:block;color:var(--muted);margin-bottom:0.6rem}
+.contact-form input, .contact-form textarea{width:100%;padding:0.6rem;border-radius:8px;border:1px solid rgba(107,79,59,0.08);background:transparent}
+.form-actions{display:flex;gap:1rem;align-items:center}
+
+/* footer */
+.site-footer{margin-top:2rem;padding:1rem 0;border-top:1px solid rgba(107,79,59,0.04)}
+
+/* chat widget */
+.chat-toggle{position:fixed;right:20px;bottom:20px;background:var(--accent);color:white;border:none;width:56px;height:56px;border-radius:50%;box-shadow:0 8px 20px rgba(0,0,0,0.12);cursor:pointer;z-index:60}
+.chat-panel{position:fixed;right:20px;bottom:90px;width:360px;max-height:70vh;background:var(--paper);border-radius:12px;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,0.12);z-index:60}
+.chat-header{background:linear-gradient(90deg,var(--brown),var(--accent));color:white;padding:0.6rem 0.8rem;display:flex;justify-content:space-between;align-items:center;font-weight:600}
+.chat-messages{padding:0.8rem;overflow:auto;flex:1;background:linear-gradient(180deg, #fffdfa, #f6f1ea)}
+.chat-messages .msg{margin-bottom:0.6rem;padding:0.6rem;border-radius:8px;max-width:85%}
+.chat-messages .msg.user{background:var(--accent);color:white;margin-left:auto}
+.chat-messages .msg.bot{background:var(--beige);color:var(--muted)}
+
+.chat-form{display:flex;gap:0.5rem;padding:0.6rem;border-top:1px solid rgba(107,79,59,0.04)}
+.chat-form input{flex:1;padding:0.6rem;border-radius:8px;border:1px solid rgba(107,79,59,0.08)}
+.chat-form button{padding:0.4rem 0.8rem;border-radius:8px;border:none;background:var(--brown);color:var(--paper)}
+
+/* animations */
+.fade-in{animation:fadeIn .6s ease both}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* responsive */
+@media (max-width:900px){
+  .hero{flex-direction:column}
+  .mobile-toggle{display:block}
+  .nav{display:none}
+  .chat-panel{right:12px;left:12px;width:auto}
+}

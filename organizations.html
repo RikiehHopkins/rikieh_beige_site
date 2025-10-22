@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Organizations — Rikieh Hopkins</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Rikieh Hopkins</a>
+    <nav class="nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="organizations.html">Organizations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="mobile-toggle" aria-label="Toggle navigation">☰</button>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Organizations</h1>
+  <ul class="org-list">
+    <li class="card"><h3>Computer Science Club</h3><p>Workshops, study groups, and hackathons.</p></li>
+    <li class="card"><h3>Game Dev Group</h3><p>Team projects and game jams with students.</p></li>
+  </ul>
+</main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Rikieh Hopkins</small>
+      <div class="socials">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="chatToggle" class="chat-toggle" aria-label="Open chat">💬</button>
+  <div id="chatPanel" class="chat-panel" hidden>
+    <div class="chat-header">
+      <div>Assistant</div>
+      <button id="chatClose" aria-label="Close chat">✕</button>
+    </div>
+    <div id="chatMessages" class="chat-messages" role="log" aria-live="polite"></div>
+    <form id="chatForm" class="chat-form">
+      <input id="chatInput" placeholder="Ask me about my projects, skills, or CS topics..." autocomplete="off">
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/chat.js"></script>
+</body>
+</html>
+

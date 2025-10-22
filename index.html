@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home — Rikieh Hopkins</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="description" content="Rikieh Hopkins — Computer Science professional portfolio.">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Rikieh Hopkins</a>
+    <nav class="nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="organizations.html">Organizations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="mobile-toggle" aria-label="Toggle navigation">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero container">
+    <div class="hero-left">
+      <h1>Hello — I'm <span class="accent">Rikieh Hopkins</span></h1>
+      <p class="lead">Computer Science student focused on game development, systems programming, and building reliable software.</p>
+      <p class="actions">
+        <a class="btn" href="projects.html">See Projects</a>
+        <a class="btn ghost" href="resume.html">View Resume</a>
+      </p>
+    </div>
+    <div class="hero-right card">
+      <h3>About</h3>
+      <p>Currently studying Computer Science at Virginia State University. I enjoy building systems, learning graphics, and shipping projects.</p>
+    </div>
+  </section>
+
+  <section class="container features">
+    <h2>Featured Projects</h2>
+    <div class="grid">
+      <article class="project-card">
+        <h3>2D Platformer</h3>
+        <p>A Unity prototype with custom player controller and enemy AI.</p>
+        <a href="projects.html#p1">View →</a>
+      </article>
+      <article class="project-card">
+        <h3>Chat Server</h3>
+        <p>Python socket-based multi-client server demonstrating concurrency.</p>
+        <a href="projects.html#p2">View →</a>
+      </article>
+      <article class="project-card">
+        <h3>Algorithm Visualizer</h3>
+        <p>Interactive web visualizer for sorting and pathfinding algorithms.</p>
+        <a href="projects.html#p3">View →</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Rikieh Hopkins</small>
+      <div class="socials">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="chatToggle" class="chat-toggle" aria-label="Open chat">💬</button>
+  <div id="chatPanel" class="chat-panel" hidden>
+    <div class="chat-header">
+      <div>Assistant</div>
+      <button id="chatClose" aria-label="Close chat">✕</button>
+    </div>
+    <div id="chatMessages" class="chat-messages" role="log" aria-live="polite"></div>
+    <form id="chatForm" class="chat-form">
+      <input id="chatInput" placeholder="Ask me about my projects, skills, or CS topics..." autocomplete="off">
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/chat.js"></script>
+</body>
+</html>
+
