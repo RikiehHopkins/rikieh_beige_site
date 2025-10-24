@@ -1,6 +1,6 @@
-# *Name of Project*
+# rikieh_beige_site*
 
-*Add a project description*
+*It a beige colors with cool designs *
 
 The following features are implemented in the project:
 
@@ -16,4 +16,4 @@ Here's a mockup and design of the project:
 
 ## Notes and Comments
 
-*Add Notes*
+*Add Notes* Its a good website with nice designs it is a computer science related project
